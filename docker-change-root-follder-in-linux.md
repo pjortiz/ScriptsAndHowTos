@@ -17,7 +17,7 @@ touch /lib/systemd/system/docker.service.d/docker-change-root-dir.conf
 ```
 [Service]
 ExecStart=
-ExecStart=/usr/bin/dockerd -H fd:// --data-root="/local.vms/docker"
+ExecStart=/usr/bin/dockerd -H fd:// --data-root="/some/directory/to/save/docker/data"
 ```
 Note: `ExecStart=` is required first as blank for some reason
 
