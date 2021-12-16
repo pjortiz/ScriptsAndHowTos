@@ -5,9 +5,13 @@ Offical Wiki: https://docs.portainer.io/v/ce-2.11/start/upgrade/docker
 ```
 docker stop portainer
 ```
-3. Delete Protainer image:
+3. Delete Protainer container:
 ```
 docker rm portainer
+```
+4. Pull latest Protainer image:
+```
+docker pull portainer/portainer-ce:latest
 ```
 5. Run Protainer with latest version:
 ```
